@@ -11,3 +11,8 @@ This is a working repo for the Lucideles project undertaken at Idiap. The object
 
 .
     ├── Project_notebooks       # Various Jupyter notebooks highlighting model training and data analysis 
+
+
+ .
+    ├── Modules/pfsim.py         # Modules to cover most powerfactory functionality regarding RMS simulations
+    ├── Scripts/                 # Scripts utilising modules for specific simulation tasks
