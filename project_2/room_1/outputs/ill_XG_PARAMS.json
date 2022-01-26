@@ -1,0 +1,9 @@
+{
+    "max_depth": 8,
+    "min_child_weight": 1,
+    "eta": 0.06,
+    "subsample": 1,
+    "colsample_bytree": 1,
+    "objective": "reg:squarederror",
+    "eval_metric": "mae"
+}

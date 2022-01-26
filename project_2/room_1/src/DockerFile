@@ -1,0 +1,32 @@
+# from https://github.com/azogue/rpi_docker_base/blob/master/build/Dockerfile
+
+FROM resin/raspberrypi3-python:3.6
+#COPY ./qemu-system-arm /usr/bin/qemu-system-arm
+
+RUN apt-get update -y
+RUN apt-get upgrade
+RUN apt-get install -qqy gcc libffi-dev g++ gfortran
+RUN apt-get install -y libatlas-base-dev
+
+RUN pip install --upgrade pip
+
+RUN pip install CherryPy
+RUN pip install paho-mqtt
+
+RUN pip install numpy==1.19.1
+RUN pip install scikit-learn==0.23.2
+RUN pip install pandas==1.1.1
+RUN pip install pickle-mixin
+RUN pip install pysolar
+CMD tail -f /dev/null
+
+#COPY deployment_DL.py .
+#COPY deployment_EL.py .
+#COPY model/ ./model/
+#COPY modelsapp.py .
+#COPY training/trainDL.py .
+#COPY training/deployment/ ./deployment/
+
+EXPOSE 8080
+
+ENTRYPOINT ["python", "modelsapp.py"]
