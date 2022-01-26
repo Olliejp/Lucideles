@@ -17,7 +17,7 @@ Project 2 is a more complex case with a larger room and two windows, orientated 
 ```
 ├── Room 1/
 	├── inputs/              # data inputs to ML models. Most data has been removed for privacy and size
-	├── outputs/             # outputs of machine learning models, inclusing indexes for reversing shuffling
+	├── outputs/             # outputs of machine learning models, including indexes for reversing shuffling
 	├── project_notebooks/   # any notebooks used outside of main src folder
 	├── src/                 # the source directory for the project machine learning pipeline
 ```
